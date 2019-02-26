@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'apercubold';
+    src: url('fonts/apercu2/apercupro-bold/apercu_bold_pro.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'apercu';
+    src: url('fonts/apercu2/apercupro-regular/apercu_regular_pro.otf') format("opentype");
+}
+
+.font {
+    font-family: 'apercu';
+}
+
+.font-bold {
+    font-family: 'apercubold';
+}
+
+.input {
+    font-family: 'apercu';
+    color: #7A7A76;
+    padding-left: 16px;
+    letter-spacing: -0.39px;
+    font-size: 16px;
+    line-height: 24px;
+    height: 48px;
+    border-radius: 6px;
+	background-color: #F5F5F1;
+    border: 0;
+}
+
+.red-btn {
+	border-radius: 6.4px;
+	background-color: #F0483D;
+    color: #FFFFFF;
+    font-family: 'apercu';
+    font-size: 16px;
+}
+
+.header-sm {
+    font-family: 'apercubold';
+    color: #141414;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.header-lg {
+    font-family: 'apercubold';
+    color: #000000;
+	font-size: 32px;
+	line-height: 40px;
+}

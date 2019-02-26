@@ -1,0 +1,305 @@
+body {
+    background-color: #FF5B2E;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    padding: 64px 0 0 0;
+    z-index: 2;
+}
+
+.let-s-eat {
+    margin-top: 61px;
+    margin-bottom: 24px;
+	color: #2E2C2C;
+	font-size: 72px;
+	line-height: 88px;
+}
+
+.we-use-ai {
+	color: #2E2C2C;
+	font-size: 24px;
+	line-height: 32px;
+    max-width: 392px;
+}
+
+#counter {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    width: 100%;
+    text-align: center;
+}
+
+.count {
+    line-height: 88px;
+    color: #FFFFFF;
+    font-size: 72px;
+}
+
+.unit {
+    line-height: 88px;
+    color: #FFFFFF;
+    font-size: 72px;
+}
+
+.numcont {
+    display: inline-block;
+    width: 175px;
+}
+
+.restaurants {
+	color: #FFFFFF;
+	font-size: 24px;
+	line-height: 32px;
+}
+
+.where-we-are {
+    margin-top: 70px;
+	color: #FFFFFF;
+	font-size: 32px;
+	line-height: 40px;
+	text-align: center;
+    width: 100%;
+}
+
+#navbar {
+    background-color: #FFFFFF;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.screenshot {
+    width: 404px;
+    height: 616px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.screen-1 {
+    position: relative;
+    width: 242px;
+    top: 170px;
+    animation-duration: 1s;
+}
+
+.screen1 {
+    position: relative;
+    top: -446px;
+    width: 235px;
+    left: 169px;
+    animation-duration: 1s;
+    animation-delay: .2s;
+}
+
+.screen3 {
+    width: 434px;
+    display: none;
+    animation-duration: 1s;
+}
+
+.what-we-do {
+    width: 100%;
+    margin-top: 176px;
+    margin-bottom: 0;
+	color: #FFFFFF;
+	font-size: 48px;
+	line-height: 40px;
+	text-align: center;
+}
+
+.header-bg {
+    width: 100%;
+	color: #FFFFFF;
+	font-size: 32px;
+	line-height: 40px;
+}
+
+.disco {
+    margin-top: 260px;
+}
+
+.deli {
+    margin-top: 200px;
+}
+
+.explore-and-find {
+	max-width: 356px;
+    opacity: 0.8;
+	color: #FFFFFF;
+	font-size: 24px;
+	line-height: 32px;
+}
+
+.send-right {
+    float: right;
+}
+
+.where-we-are {
+	width: 100%;
+    margin-bottom: 0;
+	color: #FFFFFF;
+	font-size: 48px;
+	line-height: 56px;
+	text-align: center;
+}
+
+.backdrop {
+    margin-top: 64px;
+    position: absolute;
+    width: 70%;
+    max-width: 948px;
+}
+
+/* BOTTOM ART */
+.bottom-art {
+    height: 500px;
+    position: relative;
+}
+.backdrop-bottom {
+    width: 100%;
+    max-height: 500px;
+    min-height: 400px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+}
+.city {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 5%;
+    height: 500px;
+    z-index: 2;
+}
+
+.txt-col {
+    padding: 40px;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* SHARED */
+.img-col {
+    padding: 0;
+}
+.img-cont {
+    width: 434px;
+    height: 622px;
+}
+
+/* ROW 1 */
+.first-row {
+    margin-top: 51px;
+    width: 100%;
+}
+
+/* ROW 2 */
+.scnd-row {
+    margin-top: 46px;
+    width: 100%;
+}
+.screen2 {
+    width: 434px;
+    display: none;
+    animation-duration: 1s;
+}
+
+@media only screen and (max-width: 448px) {
+    /* Resize the text and images in the very first row */
+    .let-s-eat {
+        margin-top: 0;
+        margin-bottom: 16px;
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .we-use-ai {
+        max-width: 268px;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 0;
+    }
+    .screenshot {
+        width: 243px;
+        height: 371px !important;
+        padding: 0;
+        height: 616px;
+    }
+    .screen-1 {
+        position: relative;
+        width: 145px;
+        top: 102px;
+    }
+    .screen1 {
+        position: relative;
+        width: 141px;
+        top: -267px;
+        left: 101px;
+    }
+    /* Resize the text and image in the second row */
+    .screen2 {
+        width: 260px;
+    }
+    .screen3 {
+        width: 260px;
+    }
+    .disco {
+        font-size: 24px;
+        line-height: 40px;
+    }
+    .explore-and-find {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .what-we-do {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .img-cont {
+        width: 260px;
+        height: 373px;
+    }
+    /* resize header */
+    .where-we-are {
+        font-size: 32px;
+        letter-spacing: 0.37px;
+        line-height: 40px;
+    }
+    /* resize bottom art */
+    .city {
+        height: 300px !important;
+        margin-right: 0;
+    }
+    .backdrop-bottom {
+        min-height: 300px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .img-cont {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        float: none !important;
+    }
+    .disco {
+        margin-top: 0;
+    }
+    .txt-col2 {
+        padding: 42px 24px 0 24px;
+    }
+    .send-right {
+        float: none !important;
+    }
+    .city {
+        height: 400px;
+    }
+}
