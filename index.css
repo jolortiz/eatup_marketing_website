@@ -1,5 +1,11 @@
 body {
+    background-color: #FFFFFF;
+}
+
+.red-background {
     background-color: #FF5B2E;
+    padding: 0;
+    margin: 0;
 }
 
 .container {
