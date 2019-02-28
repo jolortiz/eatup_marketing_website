@@ -29,27 +29,30 @@ $(window).scroll(function() {
 });
 
 function isScrolledIntoView(el) {
-  var rect = el.getBoundingClientRect();
-  var elemTop = rect.top;
-  var elemBottom = rect.bottom;
-  var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
-  return isVisible;
+    var rect = el.getBoundingClientRect();
+    var elemTop = rect.top;
+    var elemBottom = rect.bottom;
+    var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+    return isVisible;
 }
 
 function triggerCount() {
-  $('.count').each(function () {
-    $(this).prop('Counter',0).animate({
-      Counter: $(this).text()
-    }, {
-      duration: 2000,
-      easing: 'swing',
-      step: function (now) {
-        $(this).text(Math.ceil(now));
-      },
-      complete: function () {
-        //$(this).text('400,000');
-      }
+    var numArray = [100, 5, 600];
+    var i = 0;
+    $('.count').each(function () {
+        $(this).prop('Counter', 0).animate({
+            Counter: numArray[i]
+        }, {
+            duration: 2000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            },
+            complete: function () {
+                //$(this).text('400,000');
+            }
+        });
+        i++; // increment the counter
     });
-  });
 }
 
