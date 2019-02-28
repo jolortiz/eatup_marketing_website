@@ -55,4 +55,3 @@ function triggerCount() {
         i++; // increment the counter
     });
 }
-
