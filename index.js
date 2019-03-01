@@ -2,7 +2,9 @@ var runAnimationOnce = true;
 var runScreenAnimation = true;
 var runScreenAnimation2 = true;
 var navBarTrigger = false;
+var initialRun = true;  // this keeps track of the first run of a render
 $(window).scroll(function() {
+    // number counter animation
     if (isScrolledIntoView(document.getElementById('counter'))) {
         if (runAnimationOnce) {
             triggerCount();
@@ -11,6 +13,7 @@ $(window).scroll(function() {
     } else {
         runAnimationOnce = true;
     }
+    // second screenshot animation
     if (isScrolledIntoView(document.getElementById('screen2ani')) && runScreenAnimation) {
         console.log('screen 2 animating');
         var element = document.getElementById('imgscreen2');
@@ -18,6 +21,7 @@ $(window).scroll(function() {
         element.classList.add('animated', 'fadeInLeft');
         runScreenAnimation = false;
     }
+    // third screenshot animation
     if (isScrolledIntoView(document.getElementById('screen3ani')) && runScreenAnimation2) {
         console.log('screen 3 animating');
         var element = document.getElementById('imgscreen3');
@@ -26,17 +30,25 @@ $(window).scroll(function() {
         runScreenAnimation2 = false;
     }
     // turn the nav bar white and back when needed
+    if (initialRun) {
+        if (isScrolledOutOfView(document.getElementById('nav-trig'))) {
+            console.log('invisible');
+            navBarTrigger = true;
+        }
+        initialRun = false;
+    }
     if (isScrolledOutOfView(document.getElementById('nav-trig')) && navBarTrigger) {
-        console.log('invisible');
-        var element = document.getElementById('navbar');
-        element.classList.add('animated', 'fadeIn');
+        var element = document.getElementById('nav-background');
         element.style.backgroundColor = '#FFFFFF';
+        element.classList.remove('animated', 'fadeOut');
+        element.classList.add('animated', 'fadeIn');
         navBarTrigger = false;
     } else if (!isScrolledOutOfView(document.getElementById('nav-trig')) && !navBarTrigger){
         console.log('visible');
-        var element = document.getElementById('navbar');
+        var element = document.getElementById('nav-background');
         element.classList.remove('animated', 'fadeIn');
-        element.style.backgroundColor = 'transparent';
+        element.classList.add('animated', 'fadeOut');
+        //element.style.backgroundColor = 'transparent';
         navBarTrigger = true;
     }
 });

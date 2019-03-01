@@ -73,7 +73,6 @@ body {
 
 /* NAVBAR */
 #navbar {
-    /*background-color: #FFFFFF;*/
     position: fixed;
     top: 0;
     width: 100%;
@@ -81,17 +80,29 @@ body {
     border-radius: 0;
     border: 0;
     margin: 0;
+    height: 88px;
 }
-
 .nav-cont {
+    z-index: 3;
+    position: relative;
+    top: -88px;
+    left: 0;
     max-width: 1140px;
     width: 100%;
     margin: auto;
     padding: 24px 40px;
 }
-
 .red-logo {
     height: 40px;
+}
+.nav-background {
+    /*background-color: #FFFFFF;*/
+    z-index: 2;
+    width: 100%;
+    height: 88px;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 .screenshot {
@@ -139,10 +150,6 @@ body {
 	color: #FFFFFF;
 	font-size: 32px;
 	line-height: 40px;
-}
-
-.disco {
-    margin-top: 260px;
 }
 
 .deli {
@@ -233,11 +240,27 @@ body {
     display: none;
     animation-duration: 1s;
 }
+.txt-col2 {
+    padding: 260px 40px 0 64px;
+}
+/* ROW 3 */
+.txt-col3 {
+    padding: 220px 0 0 0;
+}
 
 @media only screen and (max-width: 448px) {
     /* navbar logo */
     .red-logo {
         height: 24px;
+    }
+    #navbar {
+        height: 72px;
+    }
+    .nav-background {
+        height: 72px;
+    }
+    .nav-cont {
+        top: -72px;
     }
     /* Resize the text and images in the very first row */
     .let-s-eat {
@@ -319,6 +342,9 @@ body {
         margin-top: 0;
     }
     .txt-col2 {
+        padding: 42px 24px 0 24px;
+    }
+    .txt-col3 {
         padding: 42px 24px 0 24px;
     }
     .send-right {

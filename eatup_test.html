@@ -2,45 +2,37 @@
 <html>
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="global.css">
   <style>
-    #shiva {
-      width: 100px;
-      height: 100px;
-      background: red;
-      -moz-border-radius: 50px;
-      -webkit-border-radius: 50px;
-      border-radius: 50px;
-      float:left;
-      margin:5px;
+    @-o-keyframes fadeIt {
+      0%   { background-color: #FFFFFF; }
+      50%  { background-color: #AD301B; }
+      100% { background-color: #000000; }
     }
-    .count {
-      line-height: 100px;
-      color: black;
-      margin-left: 30px;
-      font-size: 25px;
+    @keyframes fadeIt {
+      0%   { background-color: #FFFFFF; }
+      50%  { background-color: #AD301B; }
+      100% { background-color: #000000; }
     }
-    .unit {
-      line-height: 100px;
-      color: black;
-      font-size: 25px;
-    }
-    .spacer {
-      height: 1000px;
-      width: 100%;
-      background-color: red;
-    }
-    #numbers {
-      margin: 500px 0 500px 0;
-      overflow: auto;
-      width: 100%;
-      text-align: center;
+    .backgroundAnimated{    
+        background-image: none !important; 
+             -o-animation: fadeIt 5s ease-in; 
+                animation: fadeIt 5s ease-in; 
     }
   </style>
 </head>
 <body>
+    <div>Old stuff</div>
+    <div>Old stuff</div>
+    <div>Old stuff</div>
+    <div id="newContent">New stuff, just added</div>
 
-  
-
+    <input type="button" value="test" />
+    <script>
+        $('input[type=button]').click( function() {
+            $('#newContent').addClass('backgroundAnimated');
+        });
+        $('#newContent').removeClass('backgroundAnimated');
+    </script>
 </body>
 </html>
