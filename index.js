@@ -1,15 +1,14 @@
 var runAnimationOnce = true;
 var runScreenAnimation = true;
 var runScreenAnimation2 = true;
+var navBarTrigger = false;
 $(window).scroll(function() {
     if (isScrolledIntoView(document.getElementById('counter'))) {
-        console.log('visible');
         if (runAnimationOnce) {
             triggerCount();
             runAnimationOnce = false;
         }
     } else {
-        console.log('not visible');
         runAnimationOnce = true;
     }
     if (isScrolledIntoView(document.getElementById('screen2ani')) && runScreenAnimation) {
@@ -26,6 +25,20 @@ $(window).scroll(function() {
         element.classList.add('animated', 'fadeInRight');
         runScreenAnimation2 = false;
     }
+    // turn the nav bar white and back when needed
+    if (isScrolledOutOfView(document.getElementById('nav-trig')) && navBarTrigger) {
+        console.log('invisible');
+        var element = document.getElementById('navbar');
+        element.classList.add('animated', 'fadeIn');
+        element.style.backgroundColor = '#FFFFFF';
+        navBarTrigger = false;
+    } else if (!isScrolledOutOfView(document.getElementById('nav-trig')) && !navBarTrigger){
+        console.log('visible');
+        var element = document.getElementById('navbar');
+        element.classList.remove('animated', 'fadeIn');
+        element.style.backgroundColor = 'transparent';
+        navBarTrigger = true;
+    }
 });
 
 function isScrolledIntoView(el) {
@@ -34,6 +47,13 @@ function isScrolledIntoView(el) {
     var elemBottom = rect.bottom;
     var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
     return isVisible;
+}
+
+function isScrolledOutOfView(el) {
+    var rect = el.getBoundingClientRect();
+    var elemBottom = rect.bottom;
+    var isNotVisible = (elemBottom <= 0);
+    return isNotVisible;
 }
 
 function triggerCount() {

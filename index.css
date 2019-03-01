@@ -12,7 +12,8 @@ body {
     max-width: 1140px;
     width: 100%;
     margin: auto;
-    padding: 64px 0 0 0;
+    /*padding: 64px 0 0 0;*/
+    padding: 0;
     z-index: 2;
 }
 
@@ -70,14 +71,27 @@ body {
     width: 100%;
 }
 
+/* NAVBAR */
 #navbar {
-    background-color: #FFFFFF;
-    padding: 20px;
+    /*background-color: #FFFFFF;*/
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
     border-radius: 0;
+    border: 0;
+    margin: 0;
+}
+
+.nav-cont {
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    padding: 24px 40px;
+}
+
+.red-logo {
+    height: 40px;
 }
 
 .screenshot {
@@ -157,7 +171,7 @@ body {
 }
 
 .backdrop {
-    margin-top: 64px;
+    /*margin-top: 64px;*/
     position: absolute;
     width: 70%;
     max-width: 948px;
@@ -186,7 +200,7 @@ body {
 }
 
 .txt-col {
-    padding: 40px;
+    padding: 0 40px;
 }
 
 .row {
@@ -205,7 +219,7 @@ body {
 
 /* ROW 1 */
 .first-row {
-    margin-top: 51px;
+    margin-top: 147px;
     width: 100%;
 }
 
@@ -221,6 +235,10 @@ body {
 }
 
 @media only screen and (max-width: 448px) {
+    /* navbar logo */
+    .red-logo {
+        height: 24px;
+    }
     /* Resize the text and images in the very first row */
     .let-s-eat {
         margin-top: 0;
