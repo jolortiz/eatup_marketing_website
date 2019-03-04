@@ -248,6 +248,16 @@ body {
     padding: 220px 0 0 0;
 }
 
+/* BOTTOM BAR */
+.bottom-bar {
+	width: 100%;
+	background-color: #FFFFFF;
+	padding: 110px 150px;
+}
+.bottom-logo {
+	height: 40px;
+}
+
 @media only screen and (max-width: 448px) {
     /* navbar logo */
     .red-logo {
@@ -329,6 +339,13 @@ body {
     .backdrop-bottom {
         min-height: 300px;
     }
+	/* resize bottom bar */
+	.bottom-logo {
+		height: 24px;
+	}
+	.bottom-bar {
+		padding: 64px 24px;
+	}
 }
 
 @media only screen and (max-width: 991px) {
