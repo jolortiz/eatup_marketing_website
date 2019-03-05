@@ -38,8 +38,14 @@
                 </div>
                 <div class="col-12 col-md-6 img-col">
                     <div class="screenshot">
-                        <img class="screen-1 animated fadeInDown" src="marketing_assets/iPhoneX2@2x.png" srcset="marketing_assets/iPhoneX2@3x.png 729w, marketing_assets/iPhoneX2@2x.png 486w, marketing_assets/iPhoneX2.png 243w" alt="Screenshots">
-                        <img class="screen1 animated fadeInDown" src="marketing_assets/iPhoneX@2x.png" alt="Screenshots">
+                        <picture>
+                            <source media="(max-width: 448px)" srcset="marketing_assets/iPhoneX2.png">
+                            <img class="screen-1 animated fadeInDown" src="marketing_assets/iPhoneX2@2x.png" alt="Screenshots">
+                        </picture>
+                        <picture>
+                            <source media="(max-width: 448px)" srcset="marketing_assets/iPhoneX.png">
+                            <img class="screen1 animated fadeInDown" src="marketing_assets/iPhoneX@2x.png" alt="Screenshots">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -49,7 +55,10 @@
             <div class="row scnd-row">
                 <div class="col-12 col-md-6 img-col">
                     <div class="img-cont send-right">
-                        <img id="imgscreen2" class="screen2" src="marketing_assets/screenshot2@2x.png" alt="Screenshots">
+                        <picture>
+                            <source media="(max-width: 448px)" srcset="marketing_assets/screenshot2.png">
+                            <img id="imgscreen2" class="screen2" src="marketing_assets/screenshot2@2x.png" alt="Screenshots">
+                        </picture>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 txt-col2">
@@ -64,7 +73,10 @@
             <div class="row">
 				<div class="col-md-6 col-md-push-6 img-col">
                     <div class="img-cont">
-                        <img id="imgscreen3" class="screen3" src="marketing_assets/screenshot3@2x.png" alt="Screenshots">
+                        <picture>
+                            <source media="(max-width: 448px)" srcset="marketing_assets/screenshot3.png">
+                            <img id="imgscreen3" class="screen3" src="marketing_assets/screenshot3@2x.png" alt="Screenshots">
+                        </picture>
                     </div>
                 </div>
                 <div class="col-md-6 col-md-pull-6 txt-col3">
