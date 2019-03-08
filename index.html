@@ -23,7 +23,10 @@
     </head>
     <body>
         <div class="red-background">
-        <img id="nav-trig" class="backdrop" src="marketing_assets/left_backdrop.png">
+        <picture>
+            <source media="(min-width: 2190px)" srcset="marketing_assets/long_backdrop.png">
+            <img id="nav-trig" class="backdrop" src="marketing_assets/left_backdrop.png">
+        </picture>
         <div id="navbar" class="navbar navbar-light bg-light">
             <div id="nav-background" class="nav-background"></div>
             <div class="nav-cont">
@@ -133,6 +136,9 @@
                 <img src="marketing_assets/mail.png" alt="Email"> Email us at info@eatup.app
             </span>
 		</div>
+        <div>
+            <p class="font" style="text-align: center;">&copy; 2019, EatUp Inc.</p>
+        </div>
         
         <!-- popper, jquery, bootstrap
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

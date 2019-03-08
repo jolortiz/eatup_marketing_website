@@ -183,7 +183,6 @@ body {
     position: absolute;
     width: 70%;
     max-width: 948px;
-    /*max-height: 812px;*/
 }
 
 /* BOTTOM ART */
@@ -440,11 +439,8 @@ body {
     }
 }
 
-@media only screen and (min-width: 2968px) {
-    .let-s-eat {
-        color: #FFFFFF;
-    }
-    .we-use-ai {
-        color: #FFFFFF;
+@media only screen and (min-width: 2190px) {
+    .backdrop {
+        max-width: 1752px;
     }
 }
