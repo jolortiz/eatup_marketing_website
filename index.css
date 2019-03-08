@@ -177,12 +177,13 @@ body {
 	text-align: center;
 }
 
+/* TOP WHITE BACKDROP */
 .backdrop {
     /*margin-top: 64px;*/
     position: absolute;
     width: 70%;
-    /*max-width: 948px;*/
-    max-height: 812px;
+    max-width: 948px;
+    /*max-height: 812px;*/
 }
 
 /* BOTTOM ART */
@@ -249,18 +250,9 @@ body {
     padding: 220px 0 0 0;
 }
 
-/* BOTTOM BAR */
-.bottom-bar {
-	width: 100%;
-	background-color: #FFFFFF;
-	padding: 110px 150px;
-}
-.bottom-logo {
-	height: 40px;
-}
-
 /* BOTTOM BANNER */
 .dot-banner {
+    padding: 0 24px;
 	width: 100%;
 	height: 400px;
 	background-image: url(marketing_assets/dotbanner@2x.png);
@@ -279,6 +271,43 @@ body {
 	line-height: 24px;
 	text-align: center;
 	max-width: 554px;
+}
+.sign-btn {
+    padding: 12px 44px;
+    color: #FFFFFF;
+    font-size: 16px;
+    letter-spacing: 0.19px;
+	line-height: 24px;
+    background-color: #FFD6C9;
+    border-radius: 6px;
+    border: 0;
+}
+.btn-container {
+    margin-top: 24px;
+    margin-bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.coming-soon {
+	color: #2E2C2C;
+	font-size: 16px;
+	line-height: 32px;
+	text-align: center;
+    margin: 0;
+}
+
+/* BOTTOM BAR */
+.bottom-bar {
+	width: 100%;
+	background-color: #FFFFFF;
+	padding: 110px 150px;
+}
+.bottom-logo {
+	height: 40px;
+}
+.email-container {
+    margin-top: 10px;
+    float: right;
 }
 
 @media only screen and (max-width: 448px) {
@@ -371,6 +400,15 @@ body {
 	}
 }
 
+@media only screen and (max-width: 750px) {
+    /* Arrange contents in the Bottom Tab */
+    .email-container {
+        display: block;
+        margin-top: 32px;
+        float: none;
+    }
+}
+
 @media only screen and (max-width: 991px) {
     /* Resize big backdrop image */
     .backdrop {
@@ -399,5 +437,14 @@ body {
     }
     .city {
         height: 400px;
+    }
+}
+
+@media only screen and (min-width: 2968px) {
+    .let-s-eat {
+        color: #FFFFFF;
+    }
+    .we-use-ai {
+        color: #FFFFFF;
     }
 }
