@@ -64,7 +64,7 @@ function isScrolledIntoView(el) {
 function isScrolledOutOfView(el) {
     var rect = el.getBoundingClientRect();
     var elemBottom = rect.bottom;
-    var isNotVisible = (elemBottom <= 0);
+    var isNotVisible = (elemBottom <= 150);
     return isNotVisible;
 }
 
