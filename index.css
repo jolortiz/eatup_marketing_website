@@ -76,8 +76,8 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
     border-radius: 0;
+    z-index: 3;
     border: 0;
     margin: 0;
     height: 88px;
@@ -97,7 +97,7 @@ body {
 }
 .nav-background {
     /*background-color: #FFFFFF;*/
-    z-index: 2;
+    z-index: 3;
     width: 100%;
     height: 88px;
     position: relative;
@@ -181,7 +181,8 @@ body {
     /*margin-top: 64px;*/
     position: absolute;
     width: 70%;
-    max-width: 948px;
+    /*max-width: 948px;*/
+    max-height: 812px;
 }
 
 /* BOTTOM ART */
@@ -349,6 +350,13 @@ body {
 }
 
 @media only screen and (max-width: 991px) {
+    /* Resize big backdrop image */
+    .backdrop {
+        width: 90%;
+    }
+    .first-row {
+        margin-top: 88px;
+    }
     .img-cont {
         margin-left: auto;
         margin-right: auto;
