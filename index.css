@@ -292,16 +292,24 @@ body {
 
 /* BOTTOM BAR */
 .bottom-bar {
-	width: 100%;
+    width: 100%;
+	max-width: 1140px;
+    margin: auto;
 	background-color: #FFFFFF;
-	padding: 110px 150px;
+	padding: 110px 40px;
 }
 .bottom-logo {
-	height: 40px;
+	height: 24px;
 }
 .email-container {
     margin-top: 10px;
     float: right;
+}
+.email-link {
+    color: #FF5B2E;
+}
+.email-link:hover {
+    color: #FF5B2E;
 }
 
 @media only screen and (max-width: 448px) {
